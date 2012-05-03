@@ -5,4 +5,6 @@ class Article < ActiveRecord::Base
   
   scope :alphabetical, order('title')
   scope :active, where('active = ?', true)
+  
+  # Adding a comment to make this work.
 end
